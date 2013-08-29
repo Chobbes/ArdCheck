@@ -1,0 +1,10 @@
+#+TITLE: Lued Notes
+#+AUTHOR: Calvin Beck
+#+OPTIONS: ^:{}
+
+* Introduction
+  ArdCheck is a program designed to do some analysis of Arduino
+  programs and point out common errors. The program will point out
+  potential issues, for instance an assignment statement inside of a
+  conditional, as well as stylistic concerns such as inconsistent
+  identation.
