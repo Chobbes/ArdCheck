@@ -8,3 +8,38 @@
   potential issues, for instance an assignment statement inside of a
   conditional, as well as stylistic concerns such as inconsistent
   identation.
+
+* Implementation
+  The majority of the ArdCheck program will be written in C. The
+  parser will be written in a traditional Lex / YACC style (though it
+  will probably actually use flex / bison because they are easier to
+  come by these days).
+
+** Syntax Tree
+   The parser will generate an abstract syntax tree which we will use
+   to generate our error messages and all that fun stuff.
+
+*** TODO Nodes [0/13]
+    - [ ] Functions
+    - [ ] Statements
+      + Assignment statements (including the special ones)
+      + While loops
+      + For loops
+      + If / else statements
+      + Switch statements
+      + goto
+      + continue
+      + break
+    - [ ] Expressions
+    - [ ] Declarations
+      + Declaration specifiers.
+    - [ ] Typedefs
+    - [ ] Type casts
+    - [ ] Structures
+    - [ ] Unions
+    - [ ] Arrays
+    - [ ] Pointers
+    - [ ] Types
+      + Enums
+    - [ ] Type Qualifiers
+    - [ ] Labels for GOTO?
